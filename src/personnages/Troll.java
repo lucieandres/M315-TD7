@@ -2,19 +2,19 @@ package personnages;
 
 public class Troll extends Personnage {
 
-	String capacitéRégénération;
+	String capaciteRegeneration;
 	
-	public Troll(String nom, String capacitéRégénération) {
+	public Troll(String nom, String capaciteRegeneration) {
 		super(nom);
-		this.capacitéRégénération = capacitéRégénération;
+		this.capaciteRegeneration = capaciteRegeneration;
 	}
 
-	public String getCapacitéRégénération() {
-		return capacitéRégénération;
+	public String getCapaciteRegeneration() {
+		return capaciteRegeneration;
 	}
 
-	public void setCapacitéRégénération(String capacitéRégénération) {
-		this.capacitéRégénération = capacitéRégénération;
+	public void setCapaciteRegeneration(String capacitéRégénération) {
+		this.capaciteRegeneration = capacitéRégénération;
 	}
 
 }
