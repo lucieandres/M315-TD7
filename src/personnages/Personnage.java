@@ -1,8 +1,11 @@
 package personnages;
 
+import armes.Arme;
+
 public abstract class Personnage {
 	private String nom;
 	private int vie;
+	private Arme arme;
 	
 	public Personnage(String nom) {
 		this.nom = nom;
@@ -25,5 +28,8 @@ public abstract class Personnage {
 		this.vie = vie;
 	}
 	
+	public void seBattre(Personnage adversaire) {
+		
+	}
 	
 }
