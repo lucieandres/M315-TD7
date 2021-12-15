@@ -1,11 +1,14 @@
 package personnages;
 
+import java.util.ArrayList;
+
 import armes.Arme;
 
 public abstract class Personnage {
 	private String nom;
 	private int vie;
-	private Arme arme;
+	private Arme main;
+	private ArrayList<Arme> sac;
 	
 	public Personnage(String nom, Arme arme) {
 		this.nom = nom;
@@ -13,11 +16,19 @@ public abstract class Personnage {
 	}
 
 	public Arme getArme() {
-		return arme;
+		return main;
 	}
 
 	public void setArme(Arme arme) {
-		this.arme = arme;
+		this.main = arme;
+	}
+	
+	public ArrayList<Arme> getSac() {
+		return sac;
+	}
+
+	public void setSac(ArrayList<Arme> sac) {
+		this.sac = sac;
 	}
 
 	public String getNom() {
@@ -37,7 +48,9 @@ public abstract class Personnage {
 	}
 	
 	public void seBattre(Personnage adversaire) {
-		
+		int coef = this.getArme().getForce()-adversaire.getArme().getProtection();
+		if(coef>=0)
+			adversaire.setVie(adversaire.getVie()-coef);
 	}
 	
 }
