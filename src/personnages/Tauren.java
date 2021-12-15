@@ -1,14 +1,12 @@
 package personnages;
 
 import armes.Bouclier;
-import armes.Epee;
 
 public class Tauren extends Personnage {
 	int musculation;
 	
 	public Tauren(String nom, int musculation) {
-		super(nom, null);
-		this.setArme(new Bouclier());
+		super(nom, new Bouclier());
 		this.musculation = musculation;
 	}
 

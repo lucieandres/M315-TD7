@@ -6,8 +6,7 @@ public class Orc extends Personnage{
 	int quotienFureur;
 
 	public Orc(String nom, int quotienFureur) {
-		super(nom, null);
-		this.setArme(new Epee());
+		super(nom, new Epee());
 		this.quotienFureur = quotienFureur;
 	}
 

@@ -1,14 +1,12 @@
 package personnages;
 
 import armes.Dague;
-import armes.Epee;
 
 public class Troll extends Personnage {
 	String capaciteRegeneration;
 	
 	public Troll(String nom, String capaciteRegeneration) {
-		super(nom, null);
-		this.setArme(new Dague());
+		super(nom, new Dague());
 		this.capaciteRegeneration = capaciteRegeneration;
 	}
 
