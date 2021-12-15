@@ -35,7 +35,6 @@ class TestsPersonnages {
 		assertEquals(elfe.getVie(), 100);
 		elfe.setVie(50);
 		assertEquals(elfe.getVie(), 50);
-		System.out.println(elfe.getArme());
 		assertTrue(elfe.getArme() instanceof Epee);
 		Epee epee = new Epee();
 		elfe.setArme(epee);
