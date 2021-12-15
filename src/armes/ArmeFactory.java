@@ -7,16 +7,14 @@ public class ArmeFactory {
 	public ArmeFactory() {
 	}
 	
-	public Arme fabrique(String pers) {
-		switch(pers) {
-		case "Elfe":
-			return new Epee();
-		case "Orc":
-			return new Epee();
-		case "Tauren":
-			return new Bouclier();
-		case "Troll":
-			return new Dague();
+	public Arme fabrique(String type, String nom) {
+		switch(type) {
+		case "EPEE":
+			return new Epee(nom);
+		case "BOUCLIER":
+			return new Bouclier(nom);
+		case "DAGUE":
+			return new Dague(nom);
 		default:
 			return null;
 		}
