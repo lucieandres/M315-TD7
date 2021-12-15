@@ -1,12 +1,12 @@
 package personnages;
 
-import armes.Epee;
+import armes.ArmeFactory;
 
 public class Orc extends Personnage{
 	int quotienFureur;
 
 	public Orc(String nom, int quotienFureur) {
-		super(nom, new Epee());
+		super(nom, new ArmeFactory().fabrique("EPEE", null));
 		this.quotienFureur = quotienFureur;
 	}
 
