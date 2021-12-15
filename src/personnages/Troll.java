@@ -1,11 +1,13 @@
 package personnages;
 
-public class Troll extends Personnage {
+import armes.Dague;
 
+public class Troll extends Personnage {
 	String capaciteRegeneration;
+	static Dague dague;
 	
 	public Troll(String nom, String capaciteRegeneration) {
-		super(nom);
+		super(nom, dague);
 		this.capaciteRegeneration = capaciteRegeneration;
 	}
 
