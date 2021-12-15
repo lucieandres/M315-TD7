@@ -15,6 +15,14 @@ public class ArmeFactory {
 		this.armes = armes;
 	}
 	
+	public ArrayList<Arme> getArmes() {
+		return armes;
+	}
+
+	public void setArmes(ArrayList<Arme> armes) {
+		this.armes = armes;
+	}
+
 	public Arme fabrique(String type, String nom) {
 		Arme a = null;
 		switch(type) {
