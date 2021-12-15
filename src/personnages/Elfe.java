@@ -4,10 +4,9 @@ import armes.Epee;
 
 public class Elfe extends Personnage {
 	String valeurAcuite;
-	static Epee epee;
 	
 	public Elfe(String nom, String valeurAcuite) {
-		super(nom, epee);
+		super(nom, new Epee());
 		this.valeurAcuite = valeurAcuite;
 	}
 
