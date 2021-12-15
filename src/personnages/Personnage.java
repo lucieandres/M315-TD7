@@ -7,9 +7,17 @@ public abstract class Personnage {
 	private int vie;
 	private Arme arme;
 	
-	public Personnage(String nom) {
+	public Personnage(String nom, Arme arme) {
 		this.nom = nom;
 		this.vie = 100;
+	}
+
+	public Arme getArme() {
+		return arme;
+	}
+
+	public void setArme(Arme arme) {
+		this.arme = arme;
 	}
 
 	public String getNom() {
