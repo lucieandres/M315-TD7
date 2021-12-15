@@ -6,8 +6,7 @@ public class Elfe extends Personnage {
 	String valeurAcuite;
 	
 	public Elfe(String nom, String valeurAcuite) {
-		super(nom, null);
-		this.setArme(new Epee());
+		super(nom, new Epee());
 		this.valeurAcuite = valeurAcuite;
 	}
 

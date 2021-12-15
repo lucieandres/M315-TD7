@@ -11,6 +11,7 @@ public abstract class Personnage {
 	private ArrayList<Arme> sac;
 	
 	public Personnage(String nom, Arme arme) {
+		this.main = arme;
 		this.nom = nom;
 		this.vie = 100;
 	}
