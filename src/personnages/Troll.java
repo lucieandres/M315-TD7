@@ -15,8 +15,8 @@ public class Troll extends Personnage {
 		return capaciteRegeneration;
 	}
 
-	public void setCapaciteRegeneration(String capacitéRégénération) {
-		this.capaciteRegeneration = capacitéRégénération;
+	public void setCapaciteRegeneration(String capaciteRegeneration) {
+		this.capaciteRegeneration = capaciteRegeneration;
 	}
 
 }
