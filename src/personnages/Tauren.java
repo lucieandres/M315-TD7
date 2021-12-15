@@ -4,10 +4,9 @@ import armes.Bouclier;
 
 public class Tauren extends Personnage {
 	int musculation;
-	static Bouclier bouclier;
 	
 	public Tauren(String nom, int musculation) {
-		super(nom, bouclier);
+		super(nom, new Bouclier());
 		this.musculation = musculation;
 	}
 

@@ -4,10 +4,9 @@ import armes.Epee;
 
 public class Orc extends Personnage{
 	int quotienFureur;
-	static Epee epee;
 
 	public Orc(String nom, int quotienFureur) {
-		super(nom, epee);
+		super(nom, new Epee());
 		this.quotienFureur = quotienFureur;
 	}
 

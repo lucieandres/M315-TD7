@@ -4,10 +4,9 @@ import armes.Dague;
 
 public class Troll extends Personnage {
 	String capaciteRegeneration;
-	static Dague dague;
 	
 	public Troll(String nom, String capaciteRegeneration) {
-		super(nom, dague);
+		super(nom, new Dague());
 		this.capaciteRegeneration = capaciteRegeneration;
 	}
 
