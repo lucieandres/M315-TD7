@@ -26,4 +26,12 @@ public abstract class Arme {
 	public void setForce(int force) {
 		this.force = force;
 	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
 }
