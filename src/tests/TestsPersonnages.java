@@ -53,6 +53,7 @@ class TestsPersonnages {
 		assertEquals(orc.getVie(), 100);
 		orc.setVie(50);
 		assertEquals(orc.getVie(), 50);
+		assertTrue(orc.getArme() instanceof Epee);
 		orc.setArme(epee);
 		assertTrue(orc.getArme() instanceof Epee);		
 		
@@ -67,7 +68,8 @@ class TestsPersonnages {
 		assertEquals(tauren.getMusculation(), 20);
 		assertEquals(tauren.getVie(), 100);
 		tauren.setVie(50);
-		assertEquals(tauren.getVie(), 50);
+		assertEquals(tauren.getVie(), 50);	
+		assertTrue(tauren.getArme() instanceof Bouclier);
 		Bouclier bouclier = new Bouclier();
 		tauren.setArme(bouclier);
 		assertTrue(tauren.getArme() instanceof Bouclier);	
@@ -84,9 +86,10 @@ class TestsPersonnages {
 		assertEquals(troll.getVie(), 100);
 		troll.setVie(50);
 		assertEquals(troll.getVie(), 50);
+		assertTrue(troll.getArme() instanceof Dague);
 		Dague dague = new Dague();
-		tauren.setArme(dague);
-		assertTrue(tauren.getArme() instanceof Dague);			
+		troll.setArme(dague);
+		assertTrue(troll.getArme() instanceof Dague);			
 		
 		//test de comportement
 		
